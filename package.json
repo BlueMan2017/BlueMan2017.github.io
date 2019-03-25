@@ -1,0 +1,25 @@
+{
+  "name": "level-up",
+  "version": "1.0.0",
+  "description": "zadanie domowe z dnia pierwszego",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Sylwia Tomaszewska",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "browserslist": "> 5%, not dead"
+}
