@@ -1,13 +1,16 @@
 const path = require("path");
-var HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "main.js",
-    path: path.resolve(__dirname)
+    path: `${__dirname}/dir/`,
+    filename: "out.js"
   },
   plugins: [new HtmlWebpackPlugin()],
+  watch: true,
+  mode: "production",
   module: {
     rules: [
       {
@@ -16,7 +19,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["babel-preset-env"]
+            presets: ["@babel/env"]
           }
         }
       }
