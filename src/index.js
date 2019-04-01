@@ -1,4 +1,4 @@
-import script from "./src/script.js";
+// import script from "./script.js";
 import "./scss/main.scss";
 
-script();
+// script();
